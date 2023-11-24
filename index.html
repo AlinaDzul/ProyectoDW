@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Hello Kitty Memory Game</title>
+</head>
+<body>
+    <div id="container" class="animate-background">
+        <h1>Hello Kitty's Memory Adventure</h1>
+        <button id="start-btn" onclick="startGame()">Start Game</button>
+        <button id="pause-btn" onclick="pauseGame()">Pause</button>
+        <button id="reset-btn" onclick="resetGame()">Reset</button>
+        <div id="timer-container">00:00</div>
+        <div id="game-board" class="board"></div>
+        <div id="hello-kitty-win" class="hidden">
+            <img src="hello-kitty-win.png" alt="Hello Kitty">
+            <p>Ganaste! Hello Kitty te felicita!</p>
+        </div>
+        <div id="hello-kitty-lose" class="hidden">
+            <img src="hello-kitty-lose.png" alt="Hello Kitty">
+            <p>Oops! Hello Kitty esta triste. Inetntalo de nuevo!</p>
+        </div>
+        <div id="time-out-message">Time's up! <br> ¡Inténtalo otra vez!</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
